@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: sandybrown;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: beige;
+}
+
+#allPost {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#allPost ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#post {
+    background: beige;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#post a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#post small {
+    color: #888;
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: beige;
+    color: sandybrown;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn a:hover {
+    background-color: #0056b3;
+}
+
+#submitBtn {
+    margin-top: 20px;
+}
+
+#submitBtn .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: sandybrown;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submitBtn .btn:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+@media (max-width: 600px) {
+    #post a {
+        font-size: 16px;
+    }
+
+    #post small {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+#description h1 {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div id="description">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+        <small>Posted: {{ post.date_posted }}</small>
+        <br>
+    </div>
+    <div class="btn">
+        <a href="{% url 'home' %}">Back</a>
+    </div>
+</body>
+</html>
