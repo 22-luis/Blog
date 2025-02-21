@@ -8,7 +8,7 @@
 <body>
     <h1>Add a new post</h1>
     <form method="POST">
-        {% csrf_token %}
+        {% csrf_token %} <!-- protege contra ataques csrf(Cross-Site Request Forgery) -->
         <label for="title">Title:</label>
         <input type="text" id="title" name="title">
         <br>
